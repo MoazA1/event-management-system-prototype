@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evt_201",
+    "title": "Campus Orientation",
+    "description": "Welcome new students and tour the campus.",
+    "poster": "",
+    "location": "Main Auditorium",
+    "date": "2025-09-23",
+    "time": "2025-09-23T09:00:00Z",
+    "duration": "02:00",
+    "termId": "term_fall2025",
+    "status": "scheduled",
+    "isPaid": false,
+    "orgId": "org_abc123",
+    "categoryIds": ["cat_orientation"]
+  },
+  {
+    "id": "evt_202",
+    "title": "Guest Lecture: AI in Healthcare",
+    "description": "Explore AI applications in medical fields.",
+    "poster": "",
+    "location": "Lecture Hall B",
+    "date": "2025-09-23",
+    "time": "2025-09-23T14:00:00Z",
+    "duration": "01:30",
+    "termId": "term_fall2025",
+    "status": "scheduled",
+    "isPaid": false,
+    "orgId": "org_xyz789",
+    "categoryIds": ["cat_lecture"]
+  },
+  {
+    "id": "evt_203",
+    "title": "Student Club Fair",
+    "description": "Check out all student clubs and activities.",
+    "poster": "",
+    "location": "Campus Quad",
+    "date": "2025-09-24",
+    "time": "2025-09-24T10:00:00Z",
+    "duration": "03:00",
+    "termId": "term_fall2025",
+    "status": "scheduled",
+    "isPaid": false,
+    "orgId": "org_abc123",
+    "categoryIds": ["cat_fair"]
+  },
+  {
+    "id": "evt_204",
+    "title": "Evening Concert",
+    "description": "Live music at the Student Center.",
+    "poster": "",
+    "location": "Student Center",
+    "date": "2025-09-23",
+    "time": "2025-09-24T18:00:00Z",
+    "duration": "02:00",
+    "termId": "term_fall2025",
+    "status": "scheduled",
+    "isPaid": true,
+    "orgId": "org_musicclub",
+    "categoryIds": ["cat_concert"]
+  }
+]
