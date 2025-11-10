@@ -6,11 +6,17 @@ import PersonalTasksList from "@/components/Lists/personalTasksList";
 import AttendingTasksList from "@/components/Lists/attendingEventsList";
 import TrendingEventsList from "@/components/Lists/eventsList";
 import { fetchTrendingEvents } from "@/api/fakeTrendingEvents";
+import { Lexend_Deca } from "next/font/google";
+
+const lexendDeca = Lexend_Deca({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function HomePage() {
 
   const [selectedDate, setSelectedDate] = useState(null);
-    const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     fetchTrendingEvents().then(setEvents);
@@ -19,9 +25,10 @@ export default function HomePage() {
   return (
 
     <div className="mt-[0px] ml-[12px] pt-[0px]">
-      <div className="mb-[20px] ml-[10px] text-[28px]">
+      <div className={`mb-[20px] ml-[10px] text-[28px] ${lexendDeca.className}`}>
         <h1>Tasks & Events</h1>
       </div>
+
       <div className="mt-[10px] ml-[5px]">
         <DayPicker onDateSelect={setSelectedDate} />
       </div>
@@ -38,7 +45,7 @@ export default function HomePage() {
         <AttendingTasksList selectedDate={selectedDate} />
       </div>
 
-      <div className="mt-[30px] mb-[0px] ml-[10px] text-[28px]">
+      <div className={`mt-[30px] mb-[0px] ml-[10px] text-[28px] ${lexendDeca.className}`}>
         <h1>Trending</h1>
       </div>
 

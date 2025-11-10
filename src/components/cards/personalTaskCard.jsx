@@ -12,7 +12,7 @@ export default function PersonalTaskCard({ task }) {
   };
 
   return (
-    <div className="w-full h-14 p-4 bg-zinc-100 rounded-xl inline-flex justify-start items-center gap-3">
+    <div className="w-full h-14 p-4 bg-[#10161b] rounded-xl inline-flex justify-start items-center gap-3">
       <div className="flex-1 flex justify-start items-center gap-4">
         {/* MUI Checkbox */}
         <Checkbox
@@ -29,7 +29,7 @@ export default function PersonalTaskCard({ task }) {
         />
 
         {/* Task title */}
-        <div className="text-neutral-900 text-base font-medium font-['Inter'] truncate">
+        <div className="text-white text-base font-medium font-['Inter'] truncate">
           {task.title}
         </div>
       </div>

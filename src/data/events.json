@@ -3,16 +3,16 @@
     "id": "evt_201",
     "title": "Welcome Back Party",
     "description": "Kick off the new semester with fun activities!",
-    "poster": "https://placehold.co/182x227",
+    "poster": "/1739171573613.jpg",
     "location": "Main Campus Lawn",
-    "date": "2025-09-23",
+    "date": "2025-11-10",
     "time": "2025-09-23T18:00:00Z",
     "duration": "03:00",
     "termId": "term_fall2025",
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc001",
-    "categoryIds": ["cat_trending"]
+    "categoryIds": ["Free", "Online", "Male Only", "Female Only", "cat_trending"]
   },
   {
     "id": "evt_202",
@@ -20,14 +20,14 @@
     "description": "Join our 24-hour coding competition!",
     "poster": "https://placehold.co/182x227",
     "location": "Tech Lab Building",
-    "date": "2025-09-24",
+    "date": "2025-11-10",
     "time": "2025-09-24T09:00:00Z",
     "duration": "24:00",
     "termId": "term_fall2025",
     "status": "upcoming",
     "isPaid": true,
     "orgId": "org_abc002",
-    "categoryIds": ["cat_trending"]
+    "categoryIds": ["Free", "Online", "Male Only", "cat_trending"]
   },
   {
     "id": "evt_203",
@@ -35,14 +35,14 @@
     "description": "Learn about AI and Machine Learning.",
     "poster": "https://placehold.co/182x227",
     "location": "Engineering Hall",
-    "date": "2025-09-23",
+    "date": "2025-11-11",
     "time": "2025-09-23T14:00:00Z",
     "duration": "02:00",
     "termId": "term_fall2025",
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc003",
-    "categoryIds": ["cat_trending"]
+    "categoryIds": ["Free", "Female Only", "cat_trending"]
   },
   {
     "id": "evt_204",
@@ -50,14 +50,14 @@
     "description": "Enjoy live performances by student bands.",
     "poster": "https://placehold.co/182x227",
     "location": "Auditorium",
-    "date": "2025-09-24",
+    "date": "2025-11-11",
     "time": "2025-09-24T19:00:00Z",
     "duration": "03:00",
     "termId": "term_fall2025",
     "status": "upcoming",
     "isPaid": true,
     "orgId": "org_abc004",
-    "categoryIds": ["cat_trending"]
+    "categoryIds": ["Online", "Male Only", "Female Only", "cat_trending"]
   },
   {
     "id": "evt_205",
@@ -65,13 +65,43 @@
     "description": "Inter-departmental sports competitions.",
     "poster": "https://placehold.co/182x227",
     "location": "Sports Complex",
-    "date": "2025-09-23",
+    "date": "2025-11-10",
     "time": "2025-09-23T10:00:00Z",
     "duration": "05:00",
     "termId": "term_fall2025",
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc005",
-    "categoryIds": ["cat_trending"]
+    "categoryIds": ["Male Only", "cat_trending"]
+  },
+  {
+    "id": "evt_206",
+    "title": "Music Night",
+    "description": "Enjoy live performances by student bands.",
+    "poster": "https://placehold.co/182x227",
+    "location": "Auditorium",
+    "date": "2025-11-10",
+    "time": "2025-09-24T19:00:00Z",
+    "duration": "03:00",
+    "termId": "term_fall2025",
+    "status": "upcoming",
+    "isPaid": true,
+    "orgId": "org_abc004",
+    "categoryIds": ["Free", "Online", "Male Only", "Female Only", "cat_trending"]
+  },
+  {
+    "id": "evt_207",
+    "title": "Sports Meet",
+    "description": "Inter-departmental sports competitions.",
+    "poster": "https://placehold.co/182x227",
+    "location": "Sports Complex",
+    "date": "2025-11-11",
+    "time": "2025-09-23T10:00:00Z",
+    "duration": "05:00",
+    "termId": "term_fall2025",
+    "status": "upcoming",
+    "isPaid": false,
+    "orgId": "org_abc005",
+    "categoryIds": ["Free", "Male Only", "cat_trending"]
   }
 ]
