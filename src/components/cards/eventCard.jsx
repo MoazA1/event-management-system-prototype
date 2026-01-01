@@ -9,7 +9,7 @@ export default function EventCard({ title, image, onClick }) {
       onClick={onClick}
     >
       {/* Image container */}
-      <div className="w-full h-56 bg-white rounded-3xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.35)]">
+      <div className="w-full h-72 bg-white rounded-3xl overflow-hidden shadow-[0px_5px_15px_0px_rgba(0,0,0,0.35)]">
         <img
           className="w-full h-full object-cover"
           src={image || "https://placehold.co/182x227"}
