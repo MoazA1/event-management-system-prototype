@@ -6,7 +6,7 @@ import EventCard from "../cards/searchCard";
 export default function SearchEventsList({ events }) {
   return (
     <div className="overflow-x-auto w-full py-1">
-      <div className="flex flex-col gap-3 py-2">
+      <div className="flex flex-col gap-5 py-2">
         {events.map((event) => (
           <EventCard
             key={event.id}

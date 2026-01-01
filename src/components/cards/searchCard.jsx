@@ -15,7 +15,7 @@ export default function ExploreCard({
   return (
     <div className="w-full max-w-screen-sm bg-[#1B2228] rounded-xl flex gap-3 pl-5 hover:shadow-lg transition-shadow duration-300">
       {/* Image */}
-      <div className="w-[92px] h-[92px] rounded-[12px] overflow-hidden border-[1px] border-[#1B2221] flex-shrink-0 relative">
+      <div className="w-[112px] h-[112px] rounded-[12px] overflow-hidden border-[1px] border-[#1B2221] flex-shrink-0 relative">
         <img
           src={imageUrl}
           alt={title}

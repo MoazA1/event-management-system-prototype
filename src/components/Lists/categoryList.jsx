@@ -1,7 +1,7 @@
 import React from "react";
 import CategoryCard from "../cards/categoryCard";
 
-const categories = [
+const categories = [ //turn this to enum in backend
   "Conferences",
   "Hackathons",
   "Workshops",
@@ -22,6 +22,7 @@ export default function CategoryList() {
             key={index}
             title={category}
             imageSrc={`/${category}.jpg`}
+            id={categories[index].toLowerCase()}
           />
         ))}
       </div>

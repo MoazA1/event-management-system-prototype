@@ -12,7 +12,7 @@
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc001",
-    "categoryIds": ["Free", "Online", "Male Only", "Female Only", "cat_trending"]
+    "categoryIds": ["Free", "Online", "Male Only", "Female Only", "trending", "entertainment"]
   },
   {
     "id": "evt_202",
@@ -27,7 +27,7 @@
     "status": "upcoming",
     "isPaid": true,
     "orgId": "org_abc002",
-    "categoryIds": ["Free", "Online", "Male Only", "cat_trending"]
+    "categoryIds": ["Free", "Online", "Male Only", "trending", "hackathons"]
   },
   {
     "id": "evt_203",
@@ -42,11 +42,11 @@
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc003",
-    "categoryIds": ["Free", "Female Only", "cat_trending"]
+    "categoryIds": ["Free", "Female Only", "trending", "workshops"]
   },
   {
     "id": "evt_204",
-    "title": "Music Night",
+    "title": "Music Night 1",
     "description": "Enjoy live performances by student bands.",
     "poster": "https://placehold.co/182x227",
     "location": "Auditorium",
@@ -57,7 +57,7 @@
     "status": "upcoming",
     "isPaid": true,
     "orgId": "org_abc004",
-    "categoryIds": ["Online", "Male Only", "Female Only", "cat_trending"]
+    "categoryIds": ["Online", "Male Only", "Female Only", "trending", "entertainment"]
   },
   {
     "id": "evt_205",
@@ -72,11 +72,11 @@
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc005",
-    "categoryIds": ["Male Only", "cat_trending"]
+    "categoryIds": ["Male Only", "cat_trending", "sports"]
   },
   {
     "id": "evt_206",
-    "title": "Music Night",
+    "title": "Music Night 2",
     "description": "Enjoy live performances by student bands.",
     "poster": "https://placehold.co/182x227",
     "location": "Auditorium",
@@ -87,7 +87,7 @@
     "status": "upcoming",
     "isPaid": true,
     "orgId": "org_abc004",
-    "categoryIds": ["Free", "Online", "Male Only", "Female Only", "cat_trending"]
+    "categoryIds": ["Free", "Online", "Male Only", "Female Only", "trending", "entertainment"]
   },
   {
     "id": "evt_207",
@@ -102,6 +102,6 @@
     "status": "upcoming",
     "isPaid": false,
     "orgId": "org_abc005",
-    "categoryIds": ["Free", "Male Only", "cat_trending"]
+    "categoryIds": ["Free", "Male Only", "trending", "entertainment", "sports"]
   }
 ]

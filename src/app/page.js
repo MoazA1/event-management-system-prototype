@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 import DayPicker from "@/components/DatePickers/homeDayPicker";
 import PersonalTasksList from "@/components/Lists/personalTasksList";
 import AttendingTasksList from "@/components/Lists/attendingEventsList";
 import TrendingEventsList from "@/components/Lists/eventsList";
-import { fetchTrendingEvents } from "@/api/fakeTrendingEvents";
+import { fetchEventsByCategory } from "@/api/fetchEventsByCategory";
 import { Lexend_Deca } from "next/font/google";
 
 const lexendDeca = Lexend_Deca({
@@ -14,16 +14,16 @@ const lexendDeca = Lexend_Deca({
 });
 
 export default function HomePage() {
-
   const [selectedDate, setSelectedDate] = useState(null);
-  const [events, setEvents] = useState([]);
+  const [trendingEvents, setTrendingEvents] = useState([]);
 
   useEffect(() => {
-    fetchTrendingEvents().then(setEvents);
+    fetchEventsByCategory("trending").then((data) =>
+      setTrendingEvents(Array.isArray(data) ? data : [])
+    );
   }, []);
 
   return (
-
     <div className="mt-[0px] ml-[12px] pt-[0px]">
       <div className={`mb-[20px] ml-[10px] text-[28px] ${lexendDeca.className}`}>
         <h1>Tasks & Events</h1>
@@ -33,13 +33,17 @@ export default function HomePage() {
         <DayPicker onDateSelect={setSelectedDate} />
       </div>
 
-      <div className="mt-[20px] ml-[15px] justify-start text-[#A9CECC] text-xs font-['Inter'] uppercase tracking-wide">Personal</div>
+      <div className="mt-[20px] ml-[15px] justify-start text-[#A9CECC] text-xs font-['Inter'] uppercase tracking-wide">
+        Personal
+      </div>
 
       <div className="mt-[10px] ml-[5px] mr-[10px]">
         <PersonalTasksList selectedDate={selectedDate} />
       </div>
 
-      <div className="mt-[20px] ml-[15px] justify-start text-[#A9CECC] text-xs font-['Inter'] uppercase tracking-wide">Events to Attend</div>
+      <div className="mt-[20px] ml-[15px] justify-start text-[#A9CECC] text-xs font-['Inter'] uppercase tracking-wide">
+        Events to Attend
+      </div>
 
       <div className="mt-[10px] ml-[5px] mr-[10px]">
         <AttendingTasksList selectedDate={selectedDate} />
@@ -49,7 +53,7 @@ export default function HomePage() {
         <h1>Trending</h1>
       </div>
 
-      <TrendingEventsList events={events} />
+      <TrendingEventsList events={trendingEvents} />
     </div>
   );
 }

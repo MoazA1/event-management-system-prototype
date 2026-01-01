@@ -2,7 +2,8 @@
 import SearchBar from "@/components/SearchBar/searchBar";
 import TagsBar from "@/components/tags/tags";
 import { Lexend_Deca } from "next/font/google";
-import { fetchTrendingEvents } from "@/api/fakeTrendingEvents";
+import { fetchEventsByCategory } from "@/api/fetchEventsByCategory";
+import { fetchAllEvents } from "@/api/fetchAllEvents";
 import { useState, useEffect, useMemo } from "react";
 import ExploreList from "@/components/Lists/exploreList";
 import CategoryList from "@/components/Lists/categoryList";
@@ -27,27 +28,30 @@ function isHappeningToday(event) {
     const eventDate = new Date(y, m - 1, d);
     return isSameDay(eventDate, new Date());
   }
-
   return false;
 }
 
 function matchesTag(event, tag) {
   if (tag === "Happening Today") return isHappeningToday(event);
-
   const ids = Array.isArray(event.categoryIds) ? event.categoryIds : [];
   return ids.includes(tag);
 }
 
 export default function Explore() {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState([]);            // all events
+  const [trendingEvents, setTrendingEvents] = useState([]); // trending only
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
 
   useEffect(() => {
-    fetchTrendingEvents().then((data) => setEvents(data));
+    // load all + trending
+    fetchAllEvents().then((data) => setEvents(Array.isArray(data) ? data : []));
+    fetchEventsByCategory("trending").then((data) =>
+      setTrendingEvents(Array.isArray(data) ? data : [])
+    );
   }, []);
 
-  // 1) Search filter
+  // 1) Search filter (search across ALL events)
   const searchedEvents = useMemo(() => {
     const q = String(searchQuery || "").trim().toLowerCase();
     if (!q) return events;
@@ -63,22 +67,21 @@ export default function Explore() {
     });
   }, [events, searchQuery]);
 
-  // 2) Tags filter 
+  // 2) Tags filter (AND)
   const filteredEvents = useMemo(() => {
     if (selectedTags.length === 0) return searchedEvents;
 
     return searchedEvents.filter((event) =>
       selectedTags.every((tag) => matchesTag(event, tag))
     );
-
   }, [searchedEvents, selectedTags]);
 
+  // Search mode if query or tags exist
   const isSearching = useMemo(() => {
     const hasQuery = String(searchQuery || "").trim().length > 0;
     const hasTags = selectedTags.length > 0;
     return hasQuery || hasTags;
   }, [searchQuery, selectedTags]);
-
 
   return (
     <div>
@@ -106,6 +109,7 @@ export default function Explore() {
             <h1>From Clubs You Follow</h1>
           </div>
 
+          {/* for now using all events; later replace with "followed clubs" events */}
           <ExploreList events={events} />
 
           <div className={`mt-4 ml-4 text-[26px] ${lexendDeca.className}`}>
@@ -116,7 +120,9 @@ export default function Explore() {
           <div className={`mt-4 ml-4 text-[26px] ${lexendDeca.className}`}>
             <h1>Trending</h1>
           </div>
-          <ExploreList events={events} />
+
+          {/* trending section uses the trending API */}
+          <ExploreList events={trendingEvents} />
         </>
       )}
     </div>
