@@ -1,5 +1,5 @@
 // src/api/fakeTasks.js
-import tasks from '../data/personalEvents.json';
+import tasks from '../../data/personalEvents.json';
 
 export function fetchTasks({ date, checked, categoryId }) {
   return new Promise((resolve) => {

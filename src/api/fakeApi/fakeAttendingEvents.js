@@ -1,4 +1,4 @@
-import eventsData from "../data/attendingEvents.json";
+import eventsData from "../../data/attendingEvents.json";
 
 // Simulate fetching events (with optional filtering)
 export function fetchEvents({ date, userId }) {

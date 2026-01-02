@@ -1,5 +1,5 @@
 // src/api/fakeEventsApi.js
-import allEventsData from "../data/events.json";
+import allEventsData from "../../data/events.json";
 
 // Fetch ALL events
 export function fetchAllEvents() {

@@ -13,6 +13,7 @@ export default function BackButton({ size = 22, className = "" }) {
       className={`
         p-2
         rounded-full
+        bg-[#1B2228]
         text-gray-300
         hover:text-white
         hover:bg-white/10

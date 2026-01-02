@@ -9,6 +9,7 @@ export default function SearchEventsList({ events }) {
       <div className="flex flex-col gap-5 py-2">
         {events.map((event) => (
           <EventCard
+            id= {event.id}
             key={event.id}
             title={event.title}
             image={event.poster}

@@ -8,7 +8,7 @@ export default function EventsList({ events }) {
         <div className="overflow-x-auto w-full py-1">
             <div className="flex gap-2 px-4 overflow-x-auto flex-nowrap">
                 {events.map((event) => (
-                    <EventCard key={event.id} title={event.title} image={event.poster} onClick={() => console.log(event.title)} />
+                    <EventCard id= {event.id} key={event.id} title={event.title} image={event.poster} onClick={() => console.log(event.title)} />
                 ))}
             </div>
 

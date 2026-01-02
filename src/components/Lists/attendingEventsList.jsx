@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import PersonalTaskCard from "../cards/personalTaskCard";
-import { fetchEvents } from "../../api/fakeAttendingEvents";
+import { fetchEvents } from "../../api/fakeApi/fakeAttendingEvents";
 
 export default function PersonalTasksList({ selectedDate, userId }) {
     const [tasks, setTasks] = useState([]);

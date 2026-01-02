@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import BackButton from "@/components/buttons/backButton";
 import SearchEventsList from "@/components/Lists/searchEventsList";
-import { fetchEventsByCategory } from "@/api/fetchEventsByCategory";
+import { fetchEventsByCategory } from "@/api/fakeApi/fetchEventsByCategory";
 import { Lexend_Deca } from "next/font/google";
 
 const lexendDeca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] });
@@ -26,7 +26,7 @@ export default function Page() {
   }, [id]);
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-4">
       {/* Header */}
       <div className="relative flex items-center px-2 pt-0">
         {/* Back button - left */}

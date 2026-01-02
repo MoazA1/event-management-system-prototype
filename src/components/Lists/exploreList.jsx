@@ -40,10 +40,11 @@ export default function ExploreList({ events = [] }) {
         <div key={colIndex} className="flex flex-col gap-3 min-w-[300px]">
           {column.map((event) => (
             <ExploreCard
+              id={event.id}
               key={event.id}
               title={event.title}
               date={event.date}
-              imageUrl={event.imageUrl}
+              imageUrl={event.poster}
             />
           ))}
         </div>

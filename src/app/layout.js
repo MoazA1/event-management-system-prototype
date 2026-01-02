@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
       >
         <NavBar />
-        <main className="flex-1 pt-5 pb-20">{children}</main>
+        <main className="flex-1 pt-0 pb-20">{children}</main>
         
       </body>
     </html>

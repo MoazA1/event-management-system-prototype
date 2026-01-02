@@ -2,8 +2,8 @@
 import SearchBar from "@/components/SearchBar/searchBar";
 import TagsBar from "@/components/tags/tags";
 import { Lexend_Deca } from "next/font/google";
-import { fetchEventsByCategory } from "@/api/fetchEventsByCategory";
-import { fetchAllEvents } from "@/api/fetchAllEvents";
+import { fetchEventsByCategory } from "@/api/fakeApi/fetchEventsByCategory";
+import { fetchAllEvents } from "@/api/fakeApi/fetchAllEvents";
 import { useState, useEffect, useMemo } from "react";
 import ExploreList from "@/components/Lists/exploreList";
 import CategoryList from "@/components/Lists/categoryList";
@@ -84,7 +84,7 @@ export default function Explore() {
   }, [searchQuery, selectedTags]);
 
   return (
-    <div>
+    <div className="mt-4">
       <SearchBar onSearch={setSearchQuery} />
 
       <div className="mt-[10px]">

@@ -1,4 +1,4 @@
-import allEventsData from "../data/events.json";
+import allEventsData from "../../data/events.json";
 
 // Fetch events by category (e.g. "trending", "sports")
 export function fetchEventsByCategory(categoryId) {
