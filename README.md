@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Event Management System – Prototype
 
-## Getting Started
+## Overview
+A prototype of an event management system designed to support event discovery, registration, and participation through a structured and user-friendly interface.
 
-First, run the development server:
+## Status
+This project is currently in the prototyping stage and under active development, with plans for future expansion into a complete system.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Context
+The system is being developed as part of a larger initiative, with potential future development based on university needs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## My Role
+- Contributed to frontend development and UI implementation  
+- Designed user flows and system interactions  
+- Participated in API design and documentation  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features (Prototype)
+- Event browsing interface  
+- Event detail pages  
+- Mobile-first UI design  
+- Basic user interaction flows  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Backend (Current State)
+- Uses a mock backend with JSON data  
+- Simulates API responses for frontend integration  
+- Designed to be replaced with a real backend in future development  
 
-## Learn More
+## System Design
+- API documentation defining endpoints and interactions  
+- Structured system flow designed for scalability  
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
+JavaScript  
+HTML, CSS  
+Mock JSON backend  
+Figma  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Event Listing
+![Event Listing](screenshots/listing.png)
 
-## Deploy on Vercel
+### Event Details
+![Event Details](screenshots/details.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Mobile View
+![Mobile View](screenshots/mobile.png)
+
+## Collaboration
+This project was developed as part of a team. My contribution focused on frontend development, system design, and API planning.
+
+## Note
+This is a prototype and does not yet include a fully functional backend. Future work includes backend development, system integration, and deployment.
+
+## Key Learnings
+- Designing user-focused systems  
+- Structuring workflows and interactions  
+- Working with mock APIs for frontend development  
+- Planning scalable system architecture  
+
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
