@@ -7,6 +7,7 @@ import SearchEventsList from "@/components/Lists/searchEventsList";
 import { fetchEventsByCategory } from "@/api/fakeApi/fetchEventsByCategory";
 import { Lexend_Deca } from "next/font/google";
 
+
 const lexendDeca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] });
 
 export default function Page() {
