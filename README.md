@@ -36,7 +36,8 @@ Mock JSON backend
 Figma  
 
 ## Screenshots
-prototypeMobile.png
+![Mobile View](screenshots/prototypeMobile.png)
+
 
 ## Collaboration
 This project was developed as part of a team. My contribution focused on frontend development, system design, and API planning.
