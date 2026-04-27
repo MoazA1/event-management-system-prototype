@@ -36,15 +36,7 @@ Mock JSON backend
 Figma  
 
 ## Screenshots
-
-### Event Listing
-![Event Listing](screenshots/listing.png)
-
-### Event Details
-![Event Details](screenshots/details.png)
-
-### Mobile View
-![Mobile View](screenshots/mobile.png)
+prototypeMobile.png
 
 ## Collaboration
 This project was developed as part of a team. My contribution focused on frontend development, system design, and API planning.
